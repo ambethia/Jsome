@@ -58,6 +58,9 @@ module.exports = (function () {
     return json;
   }
   
+  jsom.generate = function (json) {
+      return generator.gen(json, jsome.level.start)
+  }
   
   return jsome;
   
